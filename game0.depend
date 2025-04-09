@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1743267155 source:c:\sdl\laptrinhcodeblock\game0\commonfunc.cpp
+	"CommonFunc.h"
+
+1744165127 c:\sdl\laptrinhcodeblock\game0\commonfunc.h
+	<iostream>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1744211329 source:c:\sdl\laptrinhcodeblock\game0\main.cpp
+	"BaseObject.h"
+	"CommonFunc.h"
+	"Map.h"
+	"Player.h"
+	"Timer.h"
+
+1744085174 source:c:\sdl\laptrinhcodeblock\game0\baseobject.cpp
+	"BaseObject.h"
+
+1743738755 c:\sdl\laptrinhcodeblock\game0\baseobject.h
+	"CommonFunc.h"
+
+1744209438 c:\sdl\laptrinhcodeblock\game0\map.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	<fstream>
+
+1744127066 source:c:\sdl\laptrinhcodeblock\game0\map.cpp
+	"map.h"
+
+1744209824 c:\sdl\laptrinhcodeblock\game0\player.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	<fstream>
+
+1744209778 source:c:\sdl\laptrinhcodeblock\game0\player.cpp
+	"Player.h"
+	<iostream>
+
+1744130920 source:c:\sdl\laptrinhcodeblock\game0\timer.cpp
+	"Timer.h"
+	"CommonFunc.h"
+
+1744130920 c:\sdl\laptrinhcodeblock\game0\timer.h
+
