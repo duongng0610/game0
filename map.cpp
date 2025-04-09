@@ -3,7 +3,9 @@
 void GameMap::LoadMap(char* name)
 {
     std::ifstream Input_file (name, std::ios::binary | std::ios::in);
-    if(!(Input_file.is_open())) return;
+    if(!(Input_file.is_open())) {
+            return;
+    }
 
     game_map_.max_x_ = 0;
     game_map_.max_y_ = 0;
@@ -83,11 +85,13 @@ void GameMap::DrawMap(SDL_Renderer* screen)
         map_x = game_map_.start_x_/TILE_SIZE;
         for(int j = x1; j<x2;j+=TILE_SIZE)
         {
-            int val = game_map_.tile[map_y][map_x];
-            if(val>0)
-            {
-                tile_mat[val].SetRect(j,i);
-                tile_mat[val].Render(screen);
+            if (map_y >= 0 && map_y < MAX_MAP_Y && map_x >= 0 && map_x < MAX_MAP_X) {
+               int val = game_map_.tile[map_y][map_x];
+               if(val>0 && val < MAX_TILE)
+               {
+                   tile_mat[val].SetRect(j,i);
+                   tile_mat[val].Render(screen);
+               }
             }
             map_x++;
         }

@@ -188,6 +188,7 @@ void Player::MoveMap(Map& map_data)
 }
 void Player::CheckToMap(Map& map_data)
 {
+    on_ground = false;
     int x1 = 0, x2 = 0;
 
     int y1 = 0, y2 = 0;
@@ -262,9 +263,11 @@ void Player::CheckToMap(Map& map_data)
      {
          y_pos_ = 0;
      }
-     else if(y_pos_ + height_frame > map_data.max_y_)
+     else if(y_pos_ + height_frame >= map_data.max_y_)
      {
          y_pos_ = map_data.max_y_ - height_frame - 1;
+         y_val_ = 0;
+         on_ground = true;
      }
 
 }

@@ -46,3 +46,50 @@
 
 1744130920 c:\sdl\laptrinhcodeblock\game0\timer.h
 
+1744212216 source:e:\game0\baseobject.cpp
+	"BaseObject.h"
+
+1744212216 e:\game0\baseobject.h
+	"CommonFunc.h"
+
+1744213386 e:\game0\commonfunc.h
+	<iostream>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1744212216 source:e:\game0\commonfunc.cpp
+	"CommonFunc.h"
+
+1744213386 source:e:\game0\main.cpp
+	"BaseObject.h"
+	"CommonFunc.h"
+	"Map.h"
+	"Player.h"
+	"Timer.h"
+
+1744212216 e:\game0\map.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	<fstream>
+
+1744212216 e:\game0\player.h
+	"BaseObject.h"
+	"CommonFunc.h"
+	<fstream>
+
+1744212216 e:\game0\timer.h
+
+1744213386 source:e:\game0\map.cpp
+	"map.h"
+
+1744213686 source:e:\game0\player.cpp
+	"Player.h"
+	<iostream>
+
+1744212216 source:e:\game0\timer.cpp
+	"Timer.h"
+	"CommonFunc.h"
+

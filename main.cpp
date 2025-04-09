@@ -24,7 +24,7 @@ bool InitData()
 
             SDL_SetRenderDrawColor(g_screen,0,0,0,255);
             int imgFlags = IMG_INIT_PNG;
-            if(!(IMG_Init(imgFlags) && imgFlags))
+            if((IMG_Init(imgFlags) & imgFlags) != imgFlags)
             {
                 return false;
             }
